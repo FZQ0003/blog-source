@@ -1,0 +1,27 @@
+.markdown-body .no-box {
+    box-shadow: unset;
+}
+
+.markdown-body .no-box img {
+    box-shadow: unset;
+}
+
+.markdown-body .no-box figcaption.image-caption {
+    display: none;
+}
+
+.hbe-input-field {
+    color: #aaa !important;
+}
+
+.license-box .license-icon.encrypt::after {
+    content: "\e61f";
+}
+
+.license-box .license-icon.other::after {
+    content: "\f28a";
+}
+
+.license-box .license-icon.none::after {
+    content: "";
+}

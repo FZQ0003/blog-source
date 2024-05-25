@@ -1,0 +1,63 @@
+name: Deploy Blog
+
+on:
+  # push:
+  #   branches:
+  #     - master
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Pre Deploy
+        env:
+          OUTPUT_PREFIX: posts_ex
+          ENCRYPT_TAGS_LIST: ${{ secrets.ENCRYPT_TAGS_LIST }}
+        run: |
+          bash pre_deploy.sh
+
+      - name: Get NPM Cache Directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+
+      - name: NPM Cache
+        uses: actions/cache@v4
+        id: npm-cache
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run-script build
+      
+      - name: Post Deploy
+        run: |
+          bash post_deploy.sh
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-${{ github.sha }}
+          path: public
+
+      # - name: Publish to Cloudflare Pages
+      #   uses: cloudflare/pages-action@1
+      #   with:
+      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     projectName: blog-fqilin
+      #     directory: public

@@ -1,0 +1,24 @@
+# From Hexo
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+
+# Configuration Files
+.vscode/
+
+# Blog Source
+themes/
+_drafts/
+archive/
+test*
+*.py
+*.bak
+gallery*
+
+# Secrets
+*.secrets

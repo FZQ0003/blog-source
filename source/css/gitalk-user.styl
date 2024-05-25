@@ -1,0 +1,159 @@
+// Set variables from theme
+// :root
+// [data-user-color-scheme="dark"]
+
+// Colors
+gt-color-main = var(--text-color)
+gt-color-secondary = var(--sec-text-color)
+gt-color-error = var(--danger) // from theme
+gt-color-divider = var(--line-color)
+gt-color-input-border = var(--line-color)
+gt-color-input = var(--inlinecode-bg-color) // from theme
+gt-color-comment = gt-color-input
+gt-color-comment-admin = gt-color-input
+gt-color-font = var(--post-text-color)
+gt-color-link = var(--post-link-color) // var(--post-link-color)
+gt-color-link-hover = var(--link-hover-color)
+
+gt-color-button = gt-color-main
+gt-color-button-hover = gt-color-secondary
+gt-color-button-text = var(--board-bg-color)
+gt-color-button2 = var(--button-bg-color)
+gt-color-button2-hover = var(--button-hover-bg-color)
+gt-color-button2-text = gt-color-main
+
+gt-color-popup = var(--board-bg-color)
+
+gt-color-loader = gt-color-secondary
+
+// Border radius (const)
+gt-border-radius = 4px
+gt-border-radius-avatar = gt-border-radius
+gt-border-radius-button = gt-border-radius
+
+#gitalk-container .gt-container
+  a
+    color: gt-color-link
+    &:hover
+      color: gt-color-link-hover
+      border-color: gt-color-link-hover
+      svg
+        fill: gt-color-link-hover
+    // .is--active
+    //   color: gt-color-link
+    //   &:hover
+    //     color: gt-color-link-hover
+  .gt-svg svg
+    fill: gt-color-main
+    vertical-align: text-top // fix svg moving down
+    transition: fill .2s ease-in-out
+  .gt-ico-github svg
+    // fill: inherit
+    &:hover
+      fill: gt-color-link-hover
+  .gt-spinner::before // ?
+    border-color: gt-color-button
+    border-top-color: gt-color-main
+  .gt-loader // loading circle
+    border-color: gt-color-loader
+    &:before // "round point" on the loading circle
+      background-color: gt-color-loader
+  .gt-avatar img
+    border-radius: gt-border-radius-avatar
+  .gt-btn
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out
+    border-color: gt-color-main
+    border-radius: gt-border-radius-button
+    background-color: gt-color-button
+    color: gt-color-button-text
+    &:hover
+      background-color: gt-color-button-hover
+      border-color: gt-color-secondary
+    &-preview
+      background-color: gt-color-button2
+      color: gt-color-button2-text
+      &:hover
+        background-color: gt-color-button2-hover
+    // &-public:hover
+    // &-login:hover
+    //   background-color: gt-color-main
+    //   border-color: gt-color-main
+  .gt-error
+    color: gt-color-error
+  .gt-link
+    border-bottom-color: gt-color-link
+  .gt-meta
+    transition: border-color .2s ease-in-out
+    border-bottom-color: gt-color-divider
+    z-index: 1 // fix
+  .gt-user
+    &:hover
+    .is--poping
+      .gt-ico svg
+        fill: gt-color-link-hover
+  .gt-version
+    color: gt-color-secondary
+  .gt-copyright
+    transition: border-color .2s ease-in-out
+    border-top-color: gt-color-divider
+  .gt-popup
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+    background-color: gt-color-popup
+    border-color: gt-color-input-border
+    border-radius: gt-border-radius
+    .gt-action.is--active:before
+      background-color: gt-color-main
+  .gt-header
+    z-index: 0 // fix
+    &-textarea
+      color: gt-color-font
+      font-family: monospace
+      border-radius: gt-border-radius
+      border-color: gt-color-input-border
+      background-color: gt-color-input
+      &:hover
+        background-color: gt-color-input // light
+      &::placeholder
+        transition: color .2s ease-in-out
+        color: gt-color-secondary
+    &-preview
+      border-radius: gt-border-radius
+      border-color: gt-color-input-border
+      background-color: gt-color-input
+    &-controls-tip
+      color: gt-color-main
+  .gt-comment
+    &-content
+      background-color: gt-color-comment
+      border-radius: gt-border-radius
+      &:hover // glowing
+        -webkit-box-shadow: gt-color-comment // dark?
+        box-shadow: gt-color-comment
+    &-admin &-content // admin
+      background-color: gt-color-comment-admin
+      &:hover
+        -webkit-box-shadow: gt-color-comment-admin
+        box-shadow: gt-color-comment-admin
+    &-username
+      color: gt-color-link
+    &-text
+    &-date
+      transition: color .2s ease-in-out
+      color: gt-color-secondary
+    &-body
+      color: gt-color-font !important // ...
+      // transition: color .2s ease-in-out
+      // .email-hidden
+      //   &-toggle a
+      //     color: #444d56
+      //     background: #dfe2e5
+      //     border-radius: 1px
+      //     &:hover
+      //       background-color: #c6cbd1
+      //   &-reply .email-signature-reply
+      //     color: #586069
+      //     border-left-color: #dfe2e5
+  .markdown-body
+    // TODO: anim & dark
+    .highlight pre
+      background-color: #f6f8fa // const

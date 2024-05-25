@@ -22,6 +22,7 @@ jobs:
         env:
           OUTPUT_PREFIX: posts_ex
           ENCRYPT_TAGS_LIST: ${{ secrets.ENCRYPT_TAGS_LIST }}
+          ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
         run: |
           bash pre_deploy.sh
 

@@ -2,14 +2,13 @@
   <%
     var icon = 'other'
     if (config.encrypt) {
-      if (config.encrypt.tags) {
+      if (page.password) {
+        icon = 'encrypt'
+      } else if (config.encrypt.tags) {
         const encrypt_tags = config.encrypt.tags.map((tag) => tag.name)
         if (page.tags.some((tag) => encrypt_tags.indexOf(tag.name) !== -1)) {
           icon = 'encrypt'
         }
-      } else if (page.password) {
-        icon = 'encrypt'
-      }
     }
     var license = theme.post.copyright.license || ''
     if (typeof page.copyright === 'string') {

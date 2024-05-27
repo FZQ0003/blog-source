@@ -13,6 +13,7 @@ Here are stored the Markdown files of each blog article, some static resources a
 * 修改了版权界面。
   * 指定了非`CC`许可协议，或对文章加密，则背景图标改变。
   * 加密文章的默认许可协议为`禁止转载`，并在主题配置中新增了`post.copyright.license_encrypt`配置。
+* 添加了对镜像站的检测。
 <!-- * 主页背景图改为每日一图。 -->
 
 * Modified the Gitalk comment area.
@@ -22,6 +23,7 @@ Here are stored the Markdown files of each blog article, some static resources a
 * Modified the copyright section.
   * If a non-`CC` license is specified, or the article is encrypted, the background icon will change.
   * The default license agreement for encrypted articles is `No reproduction without permission`, and a `post.copyright.license_encrypt` has been added to theme config.
+* Added detection of mirror sites.
 <!-- * Changed the homepage background image to daily picture. -->
 
 ## How to Deploy

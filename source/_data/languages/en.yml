@@ -1,3 +1,6 @@
 post:
   copyright:
     NORP: 'No reproduction without permission'
+
+home:
+  check_url_failed: 'This website is probably a mirror site.<br>Main site: %s'

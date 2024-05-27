@@ -1,0 +1,20 @@
+<% if (is_home() && theme.index.check_url.enable) { %>
+  <%
+    var note_type = 'warning'
+    var failed_text = 'home.check_url_failed'
+    if (theme.index.check_url.note_type) {
+      note_type = theme.index.check_url.note_type
+    }
+    if (theme.index.check_url.failed_text) {
+      failed_text = theme.index.check_url.failed_text
+    }
+    failed_text = _p(failed_text, link_to(full_url_for('')))
+  %>
+  <script>
+    if ("<%- full_url_for('') %>".indexOf(document.domain) === -1) {
+      var element = '<div class="note note-<%- note_type %>"><p><%- failed_text %></p></div>';
+      var col = document.getElementById('board').querySelector('.m-auto');
+      col.insertAdjacentHTML('afterbegin', element);
+    }
+  </script>
+<% } %>

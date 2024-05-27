@@ -231,6 +231,12 @@ index:
     enable: true
     icon: iconfont icon-top
 
+  # Custom
+  check_url:
+    enable: true
+    note_type: warning
+    # failed_text: '这个网站大概是镜像站。<br>主站链接：%s'
+
 ## Post Page
 
 post:

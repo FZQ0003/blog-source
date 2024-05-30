@@ -3,6 +3,7 @@ title: 一些说明
 date: 2022-05-06 02:00:13
 sticky: 100
 license: BY-NC-ND
+comments: false
 ---
 
 {% note info %}
@@ -21,7 +22,7 @@ license: BY-NC-ND
 
 ## 关于GPG密钥
 
-[这个页面](/blog/about/)提供了个人的**加密**与**签名**密钥，~~但你得自己找~~。
+[这个页面](/about/)提供了个人的**加密**与**签名**密钥，~~但你得自己找~~。
 
 注意事项：
 

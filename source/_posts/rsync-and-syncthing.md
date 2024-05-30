@@ -5,7 +5,6 @@ tags:
   - file-sync
   - rsync
   - syncthing
-comment_id: Rsync and Syncthing
 ---
 
 ## 前言

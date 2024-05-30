@@ -4,7 +4,6 @@ date: 2024-05-15 19:04:07
 tags:
   - linux
   - live
-comment_id: Linux Live3D
 index_img: /linux-live3d/im-linux-user.png
 banner_img: /linux-live3d/im-linux-user-2.png
 ---

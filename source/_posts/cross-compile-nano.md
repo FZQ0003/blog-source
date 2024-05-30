@@ -5,7 +5,6 @@ tags:
   - arm
   - gnu-nano
   - compile
-comment_id: Cross-compile Nano
 ---
 
 > 旧文档翻新：写于2021-08-06。

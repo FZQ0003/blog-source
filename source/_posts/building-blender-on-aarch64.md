@@ -7,7 +7,6 @@ tags:
   - compile
 index_img: /img/my-jetson-is-hot.png
 banner_img: /img/my-jetson-is-hot.png
-comment_id: Building Blender on AArch64
 ---
 
 {% note warning %}

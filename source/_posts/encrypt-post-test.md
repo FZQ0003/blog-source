@@ -1,11 +1,12 @@
 ---
-title: '文章加密测试'
+title: 文章加密测试
 date: 2024-05-25 18:33:28
 tags:
   - encrypted
 password: hello
 message: 密码是hello
 sticky: 1
+comments: false
 ---
 
 {% note success %}

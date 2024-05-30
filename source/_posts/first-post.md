@@ -3,7 +3,6 @@ title: 第一篇文章~
 date: 2021-09-06 22:59:45
 tags:
   - first
-comment_id: First Post
 license: BY-NC-ND
 ---
 
@@ -53,7 +52,7 @@ license: BY-NC-ND
 ~~对对，就在最下面……左下角！~~
 
 {% note info %}
-现在是右上角的[关于](/blog/about/)页面。
+现在是右上角的[关于](/about/)页面。
 顺便还有更多联系方式哦！
 {% endnote %}
 

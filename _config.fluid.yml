@@ -153,9 +153,9 @@ navbar:
     - key: about
       link: /about/
       icon: iconfont icon-user-fill
-    # - key: links
-    #   link: /links/
-    #   icon: iconfont icon-link-fill
+    - key: links
+      link: /links/
+      icon: iconfont icon-link-fill
 
 # Search
 search:
@@ -429,22 +429,42 @@ page404:
 
 # Links
 links:
-  enable: false  # true
-  # banner_img: /img/background.png
-  # banner_img_height: 60
-  # banner_mask_alpha: 0.3
-  # items:
-  #   - title:
-  #     intro:
-  #     link:
-  #     avatar:
-  # onerror_avatar:
-  # custom:
-  #   enable: false
-  #   content:
-  # comments:
-  #   enable: false
-  #   type: gitalk
+  enable: true
+  banner_img: /img/background.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  items:
+    - title: F_Qilin
+      intro: 为什么要在这里放自己的？
+      link: https://fqilin.top/
+      avatar: https://avatars.githubusercontent.com/u/56470931
+    - title: Billchenchina
+      intro:
+      link: https://billchen.bid/
+      avatar: https://avatars.githubusercontent.com/u/7758042
+    - title: VArcade
+      intro: 做四四方方的动画
+      link: https://space.bilibili.com/269076545
+      avatar:
+    - title: Varcade-BL Rig
+      intro: 不再更新的MC人模
+      link: https://varcade-bl.readthedocs.io/
+      avatar:
+  onerror_avatar:
+  custom:
+    enable: true
+    content: |
+      <hr>
+      <p>在下方留言申请加入我的友链，按如下格式提供信息：</p>
+      <ul>
+        <li>博客名：F_Qilin的小窝</li>
+        <li>简介：一个小小的个人博客</li>
+        <li>链接：https://blog.fqilin.top/</li>
+        <li>图片：https://blog.fqilin.top/img/avatar.jpg</li>
+      </ul>
+  comments:
+    enable: true
+    type: user
 
 ## Static Assets
 

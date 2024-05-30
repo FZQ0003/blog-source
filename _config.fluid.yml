@@ -337,10 +337,10 @@ post:
 ## Comment plugins
 
 giscus:
-  repo: FZQ0003/FZQ0003.github.io
-  repo-id: MDEwOlJlcG9zaXRvcnkyMzI4Mjc0ODU=
+  repo: FZQ0003/blog-source
+  repo-id: R_kgDOL_Ip0Q
   category: Blog Comments
-  category-id: DIC_kwDODeCqXc4Cfp3i
+  category-id: DIC_kwDOL_Ip0c4Cftvq
   mapping: og:title
   reactions-enabled: 1
   emit-metadata: 0

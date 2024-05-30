@@ -1,0 +1,37 @@
+<% if ((!is_post() && !is_page()) || (page.comments && ((is_post() && theme.post.comments.enable) || is_page()))) { %>
+  <% var commentType = typeof page.comment === 'string' && page.comment !== '' ? page.comment : theme.post.comments.type %>
+  <% if (commentType) { %>
+    <article id="comments">
+      <% if (commentType === 'user') { %>
+        <% if (theme.giscus && theme.giscus['repo'] && theme.giscus['repo-id']) { %>
+          <div id="giscus" class="giscus"></div>
+          <script type="text/javascript">
+            Fluid.utils.loadComments('#giscus', () => {
+              var options = <%- JSON.stringify(theme.giscus || {}) %>;
+              // Light & dark themes
+              var light = '<%= full_url_for(url_join(theme.static_prefix.internal_css, "giscus-light.css")) %>';
+              var dark = '<%= full_url_for(url_join(theme.static_prefix.internal_css, "giscus-dark.css")) %>';
+              window.GiscusThemeLight = light;
+              window.GiscusThemeDark = dark;
+              var s = document.createElement('script');
+              s.setAttribute('src', 'https://giscus.app/client.js');
+              s.setAttribute('data-theme', document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light);
+              s.setAttribute('crossorigin', 'anonymous');
+              for (let option in options) {
+                if ([undefined, null, ''].indexOf(options[option]) === -1 && !option.startsWith('theme-')) {
+                  s.setAttribute(option.startsWith('data-') ? option : 'data-' + option, options[option]);
+                }
+              }
+              var ss = document.getElementsByTagName('script');
+              var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+              e.parentNode.insertBefore(s, e.nextSibling);
+            });
+          </script>
+          <noscript>Please enable JavaScript to view the comments</noscript>
+        <% } %>
+      <% } else { %>
+        <%- partial('_partials/comments/' + commentType) %>
+      <% } %>
+    </article>
+  <% } %>
+<% } %>

@@ -331,33 +331,21 @@ post:
 
   # Comment plugin
   comments:
-    enable: false  # Injected
-    # type: gitalk
+    enable: true
+    type: user
 
 ## Comment plugins
 
-# TODO: Switch comment plugin to Utterances
-# utterances:
-#   repo:
-#   issue_term: pathname
-#   label: utterances
-#   theme: github-light
-#   theme_dark: github-dark
-
-# Gitalk
-gitalk:
-  clientID: e073439ae371c62845eb
-  clientSecret: 2b72e02296b7ba88847ca61d9345fe85693d4db3
-  repo: FZQ0003.github.io
-  owner: FZQ0003
-  admin: ['FZQ0003']
-  # language: zh-CN
-  labels: ['Gitalk']
-  perPage: 10
-  pagerDirection: last
-  distractionFreeMode: false
-  createIssueManually: true
-  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+giscus:
+  repo: FZQ0003/FZQ0003.github.io
+  repo-id: MDEwOlJlcG9zaXRvcnkyMzI4Mjc0ODU=
+  category: Blog Comments
+  category-id: DIC_kwDODeCqXc4Cfp3i
+  mapping: og:title
+  reactions-enabled: 1
+  emit-metadata: 0
+  input-position: top
+  lang: zh-CN
 
 ## Other Pages
 

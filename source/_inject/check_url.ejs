@@ -1,4 +1,4 @@
-<% if (is_home() && theme.index.check_url.enable) { %>
+<% if (is_home() && typeof theme.index.check_url === 'object' && theme.index.check_url.enable) { %>
   <%
     var note_type = 'warning'
     var failed_text = 'home.check_url_failed'

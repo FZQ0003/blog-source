@@ -1,4 +1,4 @@
-<% if ((!is_post() && !is_page()) || (page.comments && ((is_post() && theme.post.comments.enable) || is_page()))) { %>
+<% if ((!is_post() && !is_page() && theme.links.comments.enable) || (page.comments && ((is_post() && theme.post.comments.enable) || is_page()))) { %>
   <% var commentType = typeof page.comment === 'string' && page.comment !== '' ? page.comment : theme.post.comments.type %>
   <% if (commentType) { %>
     <article id="comments">

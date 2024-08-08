@@ -5,8 +5,8 @@
       if (page.password) {
         icon = 'encrypt'
       } else if (config.encrypt.tags) {
-        const encrypt_tags = config.encrypt.tags.map((tag) => tag.name)
-        if (page.tags.some((tag) => encrypt_tags.indexOf(tag.name) !== -1)) {
+        const encrypt_tags = config.encrypt.tags.map(tag => tag.name)
+        if (page.tags.some(tag => encrypt_tags.indexOf(tag.name) !== -1)) {
           icon = 'encrypt'
         }
       }

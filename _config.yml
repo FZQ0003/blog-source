@@ -77,15 +77,9 @@ exclude:
   - "img/logo-head-2023.png"  # TODO
   - "**/test*"
   - "**/*.py"
-  # Gallery from Material Theme
-  - "_inject/gallery.ejs"
-  - "css/gallery.min.css"
-  - "img/gallery/*"
-  - "js/gallery.js"
 ignore:
   # Remove theme files
   - "**/img/police_beian.png"
-  - "**/img/avatar.png"
   - "**/img/fluid.png"
   - "**/img/default.png"
   - "**/js/leancloud.js"

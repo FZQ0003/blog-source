@@ -4,3 +4,7 @@ post:
 
 home:
   check_url_failed: '这个网站大概是镜像站。<br>主站链接：%s'
+
+gallery:
+  menu: '图库'
+  title: '图库'

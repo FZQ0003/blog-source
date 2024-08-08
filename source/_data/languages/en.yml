@@ -4,3 +4,7 @@ post:
 
 home:
   check_url_failed: 'This website is probably a mirror site.<br>Main site: %s'
+
+gallery:
+  menu: 'Gallery'
+  title: 'Gallery'

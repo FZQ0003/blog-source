@@ -7,7 +7,7 @@
 
 # Site
 favicon: /img/favicon.png
-apple_touch_icon: /img/favicon.png
+apple_touch_icon: /img/favicon-hires.png
 tab_title_separator: ' - '
 force_https: false
 
@@ -212,7 +212,7 @@ index:
   # Banner
   banner_img: /img/daily_pic/4.jpg  # TODO: Daily pic
   banner_img_height: 100
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
 
   # Page subtitle
   slogan:
@@ -247,7 +247,7 @@ post:
   # Banner
   banner_img: /img/background.png
   banner_img_height: 70
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
 
   # Cover in home page
   default_index_img:
@@ -357,14 +357,14 @@ giscus:
 archive:
   banner_img: /img/background.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
 
 # Category
 category:
   enable: false  # true
   # banner_img: /img/background.png
   # banner_img_height: 60
-  # banner_mask_alpha: 0.3
+  # banner_mask_alpha: 0.5
   # order_by: name
   # collapse_depth: 0
   # post_order_by: -date
@@ -375,7 +375,7 @@ tag:
   enable: true
   banner_img: /img/background.png
   banner_img_height: 80
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
   tagcloud:
     min_font: 15
     max_font: 30
@@ -388,8 +388,8 @@ about:
   enable: true
   banner_img: /img/background.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
-  avatar: /img/avatar.jpg
+  banner_mask_alpha: 0.5
+  avatar: /img/avatar.png
   name: F_Qilin
   intro: |
     Coding & Rendering | Blender | Python | Minecraft | ...
@@ -421,14 +421,14 @@ about:
 page:
   banner_img: /img/background.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
 
 # 404
 page404:
   enable: true
   banner_img: /img/background.png
   banner_img_height: 85
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
   redirect_delay: 5000  # ms
 
 # Links
@@ -436,7 +436,7 @@ links:
   enable: true
   banner_img: /img/background.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.5
   items:
     - title: F_Qilin
       intro: 为什么要在这里放自己的？
@@ -462,6 +462,10 @@ links:
       intro: 现实的引力太过沉重，任何飞扬的思想都会砰然坠地。
       link: https://fang.blog.miri.site/
       avatar: https://img.lrurl.top/FangAvatar
+    - title: SharpIce 锐冰
+      intro: 世界很大，只是我的才华很有限，但我会继续学习的。
+      link: https://sharpice.top/
+      avatar: https://sharpice.top/favicon.png
     - title: VArcade
       intro: 做四四方方的动画
       link: https://space.bilibili.com/269076545
@@ -480,7 +484,7 @@ links:
         <li>博客名：F_Qilin的小窝</li>
         <li>简介：一个小小的个人博客</li>
         <li>链接：https://blog.fqilin.top/</li>
-        <li>图片：https://blog.fqilin.top/img/avatar.jpg</li>
+        <li>图片：https://blog.fqilin.top/img/avatar.png</li>
       </ul>
   comments:
     enable: true

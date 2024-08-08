@@ -5,8 +5,8 @@ tags:
   - arm
   - blender
   - compile
-index_img: /img/my-jetson-is-hot.png
-banner_img: /img/my-jetson-is-hot.png
+index_img: /building-blender-on-aarch64/my-jetson-is-hot.png
+banner_img: /building-blender-on-aarch64/my-jetson-is-hot.png
 ---
 
 {% note warning %}

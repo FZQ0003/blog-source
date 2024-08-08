@@ -1,0 +1,31 @@
+<% if (is_home() && (theme.index.switch_banner || {}).enable) { %>
+  <%
+    var config = theme.index.switch_banner || {}
+    var banner_default = site.banners.index.default
+  %>
+  <script src="<%= theme.static_prefix.internal_js %>/banner.js"></script>
+  <script>
+    var banners = '<%- site.banners.index.list %>'.split(',');
+    var banner;
+    <% if (config.refresh === 'random') { %>
+      banner = getRandomArrayElement(banners);
+    <% } else if (config.refresh === 'time') { %>
+      banner = getArrayElementByNow(banners, <%- config.refresh_interval %>);
+    <% } %>
+    if (banner) { setBanner(banner); }
+    for (let event_name of '<%- config.event || [] %>'.split(',')) {
+      ele_banner.addEventListener(event_name, event => {
+        if (isValidEventElement(event.target)) {
+          var banner;
+          <% if (config.method === 'random') { %>
+            banner = getRandomArrayElement(banners);
+          <% } else { %>
+            banner = switchArrayElement(banners, getBanner(), <%- config.method === 'backward' ? -1 : 1 %>);
+          <% } %>
+          if (banner) { setBanner(banner); }
+          console.log(banner);
+        }
+      });
+    }
+  </script>
+<% } %>

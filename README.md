@@ -15,7 +15,10 @@
   * 主题配置`index.check_url.enable`：启用检测。
   * 主题配置`index.check_url.note_type`：便签样式。
   * 主题配置`index.check_url.failed_text`：检测不通过文字，用`%s`指定主站链接在文本位置。
-<!-- * 主页背景图改为每日一图。 -->
+* 主页背景图可动态切换。
+  * 可通过主题配置设置图库、刷新时切换方式、手动切换方式等，具体可见主题配置文件中带有`NEW`注释的部分。
+  * 主题配置`index.banner_img`作为切换失败时默认图片。
+  * 扩展性设计，以便日后开发。
 
 ## How to Deploy
 

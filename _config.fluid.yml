@@ -210,7 +210,8 @@ footer:
 
 index:
   # Banner
-  banner_img: /img/daily_pic/4.jpg  # TODO: Daily pic
+  # NEW: This is the default image if switch_banner failed
+  banner_img: /img/daily_pic/4.jpg
   banner_img_height: 100
   banner_mask_alpha: 0.5
 
@@ -235,11 +236,31 @@ index:
     enable: true
     icon: iconfont icon-top
 
-  # Custom
+  # NEW: Check if URL matches the config
   check_url:
     enable: true
     note_type: warning
     # failed_text: '这个网站大概是镜像站。<br>主站链接：%s'
+  
+  # NEW: Use multiple images as banner
+  switch_banner:
+    # If true but no methods set, it will simply add scripts
+    enable: true
+    # RegExp list
+    pattern:
+      - 'img/daily_pic/*'
+    # Perform a switch when refreshing
+    # Available: *null* | random | time
+    refresh: time
+    # Minutes if "refresh" is set to "time"
+    refresh_interval: 1440
+    # Perform a switch when triggering selected event(s)
+    # Available: click | dblclick | ...
+    event:
+      - dblclick
+    # How to switch
+    # Available: random | *forward* | backward
+    method: forward
 
 ## Post Page
 

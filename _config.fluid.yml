@@ -154,6 +154,9 @@ navbar:
     - key: tag
       link: /tags/
       icon: iconfont icon-tags-fill
+    - key: gallery
+      link: /gallery/
+      icon: iconfont icon-images
     - key: about
       link: /about/
       icon: iconfont icon-user-fill
@@ -211,7 +214,7 @@ footer:
 index:
   # Banner
   # NEW: This is the default image if switch_banner failed
-  banner_img: /img/daily_pic/4.jpg
+  banner_img: /img/background.png
   banner_img_height: 100
   banner_mask_alpha: 0.5
 

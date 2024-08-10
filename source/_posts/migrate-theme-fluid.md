@@ -16,7 +16,7 @@ tags:
 
 ## 旧主题存在的问题
 
-<!-- [点击这里看旧主题](/theme-material/migrate-theme-fluid/#旧主题存在的问题) -->
+[点击这里看旧主题](/theme-material/migrate-theme-fluid/#旧主题存在的问题)
 
 ![旧主题主页截图](screenshot-old-01.png)
 
@@ -38,7 +38,7 @@ tags:
 
 ## 新主题使用体验
 
-<!-- [点击这里回到新主题](/migrate-theme-fluid/#新主题使用体验) -->
+[点击这里回到新主题](/migrate-theme-fluid/#新主题使用体验)
 
 现在换成了[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)主题，这款主题也采用Material Design风格，而且有夜间模式，且可以通过注入的方式修改源码，方便后期部署。
 

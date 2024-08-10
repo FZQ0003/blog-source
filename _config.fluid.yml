@@ -490,14 +490,18 @@ links:
       intro: 世界很大，只是我的才华很有限，但我会继续学习的。
       link: https://sharpice.top/
       avatar: https://sharpice.top/favicon.png
+    - title: Lupnis 江修
+      intro: u3u
+      link: https://blogs.obelisync.com/
+      avatar: https://avatars.githubusercontent.com/u/65355238
     - title: VArcade
       intro: 做四四方方的动画
       link: https://space.bilibili.com/269076545
-      avatar:
+      avatar: /img/varcade-1.png
     - title: Varcade-BL Rig
       intro: 不再更新的MC人模
       link: https://varcade-bl.readthedocs.io/
-      avatar:
+      avatar: /img/more-1.png
   onerror_avatar:
   custom:
     enable: true

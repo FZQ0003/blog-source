@@ -11,6 +11,6 @@ bash download_utils.sh
 bash minify.sh image gallery
 bash minify.sh html theme-material
 cd "$_path"
-cp -r "$ASSETS_DIR/public/*" public
+cp -r "$ASSETS_DIR/public/"* public
 
 echo "Done!"

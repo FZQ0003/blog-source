@@ -15,7 +15,7 @@ function getArrayElementByNow(array, interval = 1440) {
   return array[Math.floor(time) % array.length];
 }
 function switchArrayElement(array, element, step = 1) {
-  var index = array.indexOf(element)
+  var index = array.indexOf(element);
   if (index === -1) { return array[0]; }
   index += step;
   while (index < 0) { index += array.length; }

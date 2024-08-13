@@ -1,6 +1,6 @@
 {
   "name": "blog-fqilin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "build": "hexo generate",
@@ -12,6 +12,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "@minify-html/node": "^0.15.0",
     "hexo": "^7.0.0",
     "hexo-blog-encrypt": "^3.0.0",
     "hexo-generator-archive": "^2.0.0",

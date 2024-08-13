@@ -19,17 +19,21 @@
   * 可通过主题配置设置图库、刷新时切换方式、手动切换方式等，具体可见主题配置文件中带有`NEW`注释的部分。
   * 主题配置`index.banner_img`作为切换失败时默认图片。
   * 扩展性设计，以便日后开发。
+* 使用[minify-html](https://github.com/wilsonzlin/minify-html)压缩生成的html文件。具体见站点配置。
+  * 该模块仅支持x86_64与arm64架构。
+  * 本来想继续压缩js和css的，有问题，想想算了。
 
 ## How to Deploy
 
 > [!NOTE]
 >
-> 该部署方式**不会**读取或部署部分内容，如加密文章、敏感数据等。
+> 该部署方式**不会**读取或部署部分内容，如加密文章、图库资源、敏感数据等。  
+> 如果需要，请配置`.secrets`文件与子模块，然后在部署前后分别运行`pre_deploy.sh`和`post_deploy.sh`。
 
 确保已经安装了Node.js。执行下列命令后，将`public`文件夹内容部署到服务器中，注意部署位置应与配置相同。
 
 ``` sh
-# bash pre_deploy.sh
+# bash pre_deploy.sh .secrets
 npm install
 npm run-script build
 # bash post_deploy.sh

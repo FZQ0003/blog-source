@@ -83,6 +83,8 @@ ignore:
   - "**/img/fluid.png"
   - "**/img/default.png"
   - "**/js/leancloud.js"
+  - "**/js/umami-view.js"
+  - "**/css/gitalk.css"
 
 # Extensions
 theme: fluid

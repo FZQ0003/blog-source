@@ -195,12 +195,12 @@ open_graph:
 footer:
   content: |
     <i class="iconfont icon-copyright"></i>
-    <span id="copyright_year">2021 - </span>
-    <span>F_Qilin</span>
+    <span id="copyright_year">2021-</span>&nbsp;
+    <span>by F_Qilin</span>&nbsp;
     <script>document.getElementById("copyright_year").innerText += new Date().getFullYear();</script>
     <br>
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <i class="iconfont icon-love"></i>
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>&nbsp;
+    <i class="iconfont icon-love"></i>&nbsp;
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     <br>
     <!-- <a href="http://furgov.cn" rel="nofollow">兽ICP备202206210号</a> -->

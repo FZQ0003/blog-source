@@ -143,7 +143,7 @@ minify_html:
     # keep_ssi_comments: false
     # preserve_brace_template_syntax: false
     # preserve_chevron_percent_template_syntax: false
-    minify_js: true
+    minify_js: false  # Issue with some scripts
     minify_css: true
     # remove_bangs: false
     # remove_processing_instructions: false

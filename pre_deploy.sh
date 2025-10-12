@@ -16,7 +16,7 @@ if [ -n "$ENCRYPT_KEY" ]; then
     find . -type f -name "*.tar.xz.enc" | while read -r archive; do
         prefix="${archive%%.tar.xz.enc}"
         echo "Decrypting $(basename $prefix)..."
-        mv "$prefix.tar.xz" "$prefix.tar.xz.bak"
+        mv "$prefix.tar.xz" "$prefix.tar.xz.bak" 2> /dev/null
         printf "$ENCRYPT_KEY" | tr -d '[\r\n]' | base64 -d | openssl enc -d \
                 -aes-256-cbc -iter 256 \
                 -in "$prefix.tar.xz.enc" -out "$prefix.tar.xz" \

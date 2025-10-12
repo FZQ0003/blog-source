@@ -14,7 +14,7 @@ if [ -n "$ENCRYPT_KEY" ]; then
         echo "source_extra *.md *.html */" > "list.txt"
     fi
     # Update the archives
-    while IFS=' ' read -r archive_name file_paths; do
+    while read -r archive_name file_paths; do
         echo "Updating $archive_name..."
         if [[ -z "$file_paths" ]]; then
             echo " -> Skipped"

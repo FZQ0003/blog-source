@@ -1,11 +1,11 @@
 ---
 title: GRUB主题构建指南
+date: 2025-10-09 05:17:17
 tags:
   - grub
   - theme
 index_img: /grub-theme-guide/preview-1080p.jpg
 banner_img: /grub-theme-guide/preview-1080p.jpg
-date: 2025-10-09 05:17:17
 ---
 
 

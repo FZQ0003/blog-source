@@ -115,6 +115,8 @@ custom_js:
 custom_css:
   - //at.alicdn.com/t/c/font_4527289_ig13omtbhfp.css
   - /css/custom.css
+  - /css/giscus-dark.css
+  - /css/giscus-light.css
 
 # Analysis of website visitors
 web_analytics:

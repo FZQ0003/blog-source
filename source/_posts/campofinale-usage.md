@@ -3,8 +3,12 @@ title: Campofinale系列项目部署心得
 date: 2025-12-02 04:04:04
 tags:
   - campofinale
+archive: true
 ---
 
+{% note warning %}
+该项目已无法部署。文章仅作参考。
+{% endnote %}
 
 ## 前言
 

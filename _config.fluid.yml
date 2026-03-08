@@ -504,6 +504,10 @@ links:
       intro: 来点奇奇怪怪的- < )
       link: https://linfun.top/
       avatar: https://img.linfun.top/imgapp/CxDragon-big-heade.png
+    - title: 无名博客
+      intro: 只是一个无聊的人
+      link: https://wuminboke.site/
+      avatar: https://bu.dusays.com/2024/07/23/669f7b016ad0b.jpg
     - title: VArcade
       intro: 做四四方方的动画
       link: https://space.bilibili.com/269076545
@@ -517,7 +521,7 @@ links:
     enable: true
     content: |
       <hr>
-      <p>在下方留言申请加入我的友链，按如下格式提供信息：</p>
+      <p>通过我的联系方式或在评论区留言申请加入我的友链，按如下格式提供信息：</p>
       <ul>
         <li>博客名：F_Qilin的小窝</li>
         <li>简介：一个小小的个人博客</li>

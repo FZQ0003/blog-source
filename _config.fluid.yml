@@ -299,7 +299,8 @@ post:
       awl: 2  # Average word length
       wpm: 60  # Words per minute
     views:
-      enable: false
+      enable: true
+      source: openkounter
 
   # Update date
   updated:

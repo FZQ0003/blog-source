@@ -120,7 +120,12 @@ custom_css:
 
 # Analysis of website visitors
 web_analytics:
-  enable: false
+  enable: true
+  follow_dnt: true
+  openkounter:
+    server_url: https://kounter.fqilin.top
+    path: '"blog:" + window.location.pathname'
+    ignore_local: true
 
 # Canonical URL for Google Search
 canonical:
@@ -176,6 +181,7 @@ search:
 
 # Banner
 banner:
+  random_img: false  # TODO: source/img/random/
   parallax: true
   width_height_ratio: 1.0
 
@@ -207,7 +213,8 @@ footer:
     <br>
     <!-- <a href="http://furgov.cn" rel="nofollow">兽ICP备202206210号</a> -->
   statistics:
-    enable: false
+    enable: true
+    source: openkounter
   beian:
     enable: false
 
@@ -223,7 +230,7 @@ index:
   # Page subtitle
   slogan:
     enable: true
-    text:
+    text:  # TODO: list format to random selection
     api:
       enable: false
 
@@ -312,6 +319,7 @@ post:
   # Toc
   toc:
     enable: true
+    expand_all: true
     placement: right
     headingSelector: h1,h2,h3,h4,h5,h6
     collapseDepth: 0

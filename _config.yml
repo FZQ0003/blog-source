@@ -29,7 +29,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - "**/*.html"
+  - '**/*.html'
 
 # Writing
 new_post_name: :title.md
@@ -71,21 +71,21 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 include:
-  - "_/*"
+  - '_/*'
 exclude:
-  - "img/archive/*"
-  - "img/daily_pic.png"
-  - "img/logo-head-2023.png"  # TODO
-  - "**/test*"
-  - "**/*.py"
+  - 'img/archive/*'
+  - 'img/daily_pic.png'
+  - 'img/logo-head-2023.png'  # TODO
+  - '**/test*'
+  - '**/*.py'
 ignore:
   # Remove theme files
-  - "**/img/police_beian.png"
-  - "**/img/fluid.png"
-  - "**/img/default.png"
-  - "**/js/leancloud.js"
-  - "**/js/umami-view.js"
-  - "**/css/gitalk.css"
+  - '**/css/gitalk.css'
+  - '**/img/default.png'
+  - '**/img/fluid.png'
+  - '**/img/police_beian.png'
+  - '**/js/leancloud.js'
+  - '**/js/umami-view.js'
 
 # Extensions
 theme: fluid

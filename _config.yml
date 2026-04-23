@@ -81,6 +81,8 @@ exclude:
 ignore:
   # Remove theme files
   - '**/css/gitalk.css'
+  - '**/img/random/default.png'
+  - '**/img/avatar.png'
   - '**/img/default.png'
   - '**/img/fluid.png'
   - '**/img/police_beian.png'

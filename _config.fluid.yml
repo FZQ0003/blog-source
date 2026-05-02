@@ -113,10 +113,8 @@ font:
 # Custom file paths
 custom_js:
 custom_css:
-  - //at.alicdn.com/t/c/font_4527289_ig13omtbhfp.css
+  - //at.alicdn.com/t/c/font_4527289_dwciwovf5nj.css
   - /css/custom.css
-  - /css/giscus-dark.css
-  - /css/giscus-light.css
 
 # Analysis of website visitors
 web_analytics:
@@ -366,7 +364,7 @@ post:
     enable: true
     specific: true
     options:
-      theme: default
+      theme: neo
 
   # Comment plugin
   comments:
@@ -429,28 +427,29 @@ about:
   intro: |
     Coding & Rendering | Blender | Python | Minecraft | ...
   icons:
-    - class: iconfont icon-mail
+    - class: iconfont icon-email  # Custom
       link: mailto:468403876@qq.com
       tip: E-Mail
     - class: iconfont icon-github-fill
       link: https://github.com/FZQ0003
       tip: GitHub
+    - class: iconfont icon-qq-fill
+      qrcode: /img/qrcode/qm.qq.com_q_XuGnXogpqO.png
+      # link: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=468403876
     - class: iconfont icon-bilibili
       link: https://space.bilibili.com/48122080
       tip: Bilibili
-    - class: iconfont icon-twitter-x-line
-      link: https://twitter.com/F_Qilin
-      tip: X
-    - class: iconfont icon-telegram
-      link: https://t.me/F_Qilin
-      tip: Telegram
-    - class: iconfont icon-qq-fill
-      qrcode: /img/qrcode/qm.qq.com_q_XuGnXogpqO.png
-    - class: iconfont icon-juice
-      qrcode: /img/qrcode/share.jagat.cn_u_eJ7uHHgZGU.png
-    - class: iconfont icon-key
+    - class: iconfont icon-key  # Custom
       link: /about/pubkey-fqilin-es.asc
       tip: GPG-Pubkey
+    # - class: iconfont icon-twitter-x-line  # Custom
+    #   link: https://x.com/F_Qilin
+    #   tip: X
+    # - class: iconfont icon-telegram  # Custom
+    #   link: https://t.me/F_Qilin
+    #   tip: Telegram
+    # - class: iconfont icon-juice  # Custom
+    #   qrcode: /img/qrcode/share.jagat.cn_u_eJ7uHHgZGU.png
 
 # Custom
 page:
@@ -549,16 +548,16 @@ static_prefix:
   internal_css: /css
   internal_img: /img
 
-  anchor: https://cdnjs.loli.net/ajax/libs/anchor-js/5.0.0/
-  github_markdown: https://cdnjs.loli.net/ajax/libs/github-markdown-css/4.0.0/  # 4.x
-  jquery: https://cdnjs.loli.net/ajax/libs/jquery/3.7.1/
-  bootstrap: https://cdnjs.loli.net/ajax/libs/twitter-bootstrap/4.6.2/  # 4.x
-  tocbot: https://cdnjs.loli.net/ajax/libs/tocbot/4.29.0/  # 4.32.2
-  typed: https://cdnjs.loli.net/ajax/libs/typed.js/2.0.9/  # 2.0.x
-  fancybox: https://cdnjs.loli.net/ajax/libs/fancybox/3.5.7/
-  nprogress: https://cdnjs.loli.net/ajax/libs/nprogress/0.2.0/
-  mathjax: https://cdnjs.loli.net/ajax/libs/mathjax/3.2.2/
-  clipboard: https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.11/
-  mermaid: https://cdnjs.loli.net/ajax/libs/mermaid/8.14.0/  # 8.x
-  hint: https://cdnjs.loli.net/ajax/libs/hint.css/2.7.0/
-  moment: https://cdnjs.loli.net/ajax/libs/moment.js/2.30.1/
+  anchor: https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/  # latest (5.0.0)
+  github_markdown: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/  # <5.0.0 (4.0.0)
+  jquery: https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/  # <4.0.0 (3.6.4)
+  bootstrap: https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/  # <5.0.0 (4.6.1)
+  tocbot: https://cdn.jsdelivr.net/npm/tocbot@4.36.6/dist/  # latest (4.20.1)
+  typed: https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/  # <=2.0.12 (2.0.12)
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/  # latest (3.5.7)
+  nprogress: https://cdn.jsdelivr.net/npm/nprogress@0.2.0/  # latest (0.2.0)
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3.2.2/  # <4.0.0 (3.2.2)
+  clipboard: https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/  # latest (2.0.11)
+  mermaid: https://cdn.jsdelivr.net/npm/mermaid@11.14.0/dist/  # latest (8.14.0)
+  hint: https://cdn.jsdelivr.net/npm/hint.css@3.0.0/  # latest (2.7.0)
+  moment: https://cdn.jsdelivr.net/npm/moment@2.30.1/dist/  # latest (2.29.4)

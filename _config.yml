@@ -124,7 +124,8 @@ encrypt:
   # tags: secrets.ENCRYPT_TAGS_LIST
   theme: shrink
   wrong_pass_message: 密码错误，请重新输入。
-  wrong_hash_message: 文章校验失败，不过还是能看看解密后的内容。
+  decryptButton:
+    text: 解密
   silent: true
 
 # minify-html

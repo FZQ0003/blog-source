@@ -486,8 +486,8 @@ links:
       avatar: https://blog.fmyron.com/img/avatar.png  # https://avatars.githubusercontent.com/u/73187647
     - title: YANFD
       intro:
-      link: https://www.yanfd.cn/
-      avatar: https://www.yanfd.cn/img/favicon.png
+      link: https://gallery.yanfd.cn/ # https://www.yanfd.cn/
+      avatar: https://p.ipic.vip/ykphvk.jpg # https://www.yanfd.cn/img/favicon.png
     - title: 熊谷 凌
       intro:
       link: https://furryr.github.io/
@@ -496,10 +496,10 @@ links:
       intro: 现实的引力太过沉重，任何飞扬的思想都会砰然坠地。
       link: https://fang.blog.miri.site/
       avatar: https://img.lrurl.top/FangAvatar
-    - title: SharpIce 锐冰
-      intro: 世界很大，只是我的才华很有限，但我会继续学习的。
-      link: https://sharpice.top/
-      avatar: https://sharpice.top/favicon.ico  # https://avatars.githubusercontent.com/u/61524717
+    # - title: SharpIce 锐冰
+    #   intro: 世界很大，只是我的才华很有限，但我会继续学习的。
+    #   link: https://avali.top/
+    #   avatar: https://avali.top/favicon.ico  # https://avatars.githubusercontent.com/u/61524717
     - title: Lupnis 江修
       intro: u3u
       link: https://blogs.obelisync.com/
@@ -528,11 +528,11 @@ links:
       intro: 不再更新的MC人模
       link: https://varcade-bl.readthedocs.io/
       avatar: /img/links/more.png
-  onerror_avatar:
+  onerror_avatar: /img/links/error.png
   custom:
     enable: true
     content: |
-      <hr>
+      <hr />
       <p>通过我的联系方式或在评论区留言申请加入我的友链，按如下格式提供信息：</p>
       <ul>
         <li>博客名：F_Qilin的小窝</li>
@@ -540,6 +540,9 @@ links:
         <li>链接：https://blog.fqilin.top/</li>
         <li>图片：https://blog.fqilin.top/img/avatar.png</li>
       </ul>
+      <div class="note note-warning">
+        <p>不定期检查链接和头像的可访问性。<br />若链接或头像无法访问，将被修改或移除，恕不另行通知。</p>
+      </div>
   comments:
     enable: true
     type: user
@@ -556,12 +559,12 @@ static_prefix:
   github_markdown: https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/  # <5.0.0 (4.0.0)
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/  # <4.0.0 (3.6.4)
   bootstrap: https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/  # <5.0.0 (4.6.1)
-  tocbot: https://cdn.jsdelivr.net/npm/tocbot@4.36.6/dist/  # latest (4.20.1)
+  tocbot: https://cdn.jsdelivr.net/npm/tocbot@4.36.8/dist/  # latest (4.20.1)
   typed: https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/  # <=2.0.12 (2.0.12)
   fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/  # latest (3.5.7)
   nprogress: https://cdn.jsdelivr.net/npm/nprogress@0.2.0/  # latest (0.2.0)
   mathjax: https://cdn.jsdelivr.net/npm/mathjax@3.2.2/  # <4.0.0 (3.2.2)
   clipboard: https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/  # latest (2.0.11)
-  mermaid: https://cdn.jsdelivr.net/npm/mermaid@11.14.0/dist/  # latest (8.14.0)
+  mermaid: https://cdn.jsdelivr.net/npm/mermaid@11.16.1/dist/  # latest (8.14.0)
   hint: https://cdn.jsdelivr.net/npm/hint.css@3.0.0/  # latest (2.7.0)
   moment: https://cdn.jsdelivr.net/npm/moment@2.30.1/dist/  # latest (2.29.4)

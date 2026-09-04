@@ -524,6 +524,10 @@ links:
       intro: 嗷？
       link: http://furzhengze.top/
       avatar: http://furzhengze.top/upload/1729840291079.png
+    - title: 中二蘑菇的小角落
+      intro: 一只狐狸敲出的一个奇迹
+      link: https://imfurry.com
+      avatar: https://cdn-imfurry.imfurry.com/avatar/zebwqFurryAvatar.png
     - title: VArcade
       intro: 做四四方方的动画
       link: https://space.bilibili.com/269076545
@@ -544,6 +548,9 @@ links:
         <li>链接：https://blog.fqilin.top/</li>
         <li>图片：https://blog.fqilin.top/img/avatar.png</li>
       </ul>
+      <div class="note note-info">
+        <p>请尽量不要使用 HTTP 协议，一些浏览器会拒绝加载，推荐使用 HTTPS。</p>
+      </div>
       <div class="note note-warning">
         <p>不定期检查链接和头像的可访问性。<br />若链接或头像无法访问，将被修改或移除，恕不另行通知。</p>
       </div>

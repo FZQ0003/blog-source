@@ -1,15 +1,18 @@
 ---
 title: 在Cloudflare上部署Open Kounter
 date: 2026-03-25 07:10:13
+updated: 2026-11-11 11:47:00
 tags:
   - cloudflare
   - web
 ---
 
 
-{% note info %}
+{% note warning %}
 
-没写完，先发个草稿，等有空了再完善一下。
+本文基于Open Kounter的[`46a4c05`](https://github.com/Mintimate/open-kounter/tree/46a4c054ae0d3dc637bc78ec42c14e1dd7ca9ee6)提交撰写。该提交及更早的提交使用`EdgeOne Node Functions + KV`作为计数存储，与`Cloudflare Pages Functions + Workers KV`差异极小，可以实现不修改源码迁移部署。
+
+新版Open Kounter采用`EdgeOne Cloud Functions + Pages Blob`作为计数存储，虽然`Cloudflare R2`能够对标`EdgeOne Pages Blob`，但需要编写移植层，后续维护难度增加。考虑到博客的日访问量较小，本文不再跟进更新，还请注意。
 
 {% endnote %}
 

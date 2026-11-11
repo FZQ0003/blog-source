@@ -1,6 +1,7 @@
 ---
 title: 交叉编译GNU nano并在开发板终端运行
 date: 2021-09-07 18:50:16
+updated: 2021-09-07 18:50:16
 tags:
   - arm
   - gnu-nano

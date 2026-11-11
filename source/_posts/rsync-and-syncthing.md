@@ -1,6 +1,7 @@
 ---
 title: 使用Rsync与Syncthing实现文件同步
 date: 2024-05-10 20:55:19
+updated: 2024-05-10 20:55:19
 tags:
   - file-sync
   - rsync

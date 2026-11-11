@@ -1,6 +1,7 @@
 ---
 title: Campofinale系列项目部署心得
 date: 2025-12-02 04:04:04
+updated: 2026-02-25 00:00:00
 tags:
   - campofinale
 archive: true

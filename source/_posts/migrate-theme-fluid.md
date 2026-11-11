@@ -1,6 +1,7 @@
 ---
 title: 关于迁移至新主题的说明
 date: 2024-03-16 21:17:42
+updated: 2024-03-16 21:17:42
 tags:
   - hexo
   - migrate

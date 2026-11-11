@@ -1,6 +1,7 @@
 ---
 title: 在AArch64/ARM64架构平台编译Blender
 date: 2021-10-27 22:54:54
+updated: 2021-10-27 22:54:54
 tags:
   - arm
   - blender

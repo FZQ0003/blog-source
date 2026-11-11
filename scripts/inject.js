@@ -9,4 +9,6 @@ hexo.extend.filter.register('theme_inject', injects => {
   injects.linksComments.file('default', 'source/_inject/comments.ejs');
   // Copyright
   injects.postCopyright.file('default', 'source/_inject/copyright.ejs');
+  // Encrypt
+  injects.postMarkdownEnd.file('default', 'source/_inject/encrypt.ejs');
 });

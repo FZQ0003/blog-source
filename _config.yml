@@ -121,11 +121,15 @@ stylus:
 encrypt:
   abstract: '[该文章已被加密]'
   message: 请输入密码查看该文章
-  # tags: secrets.ENCRYPT_TAGS_LIST
-  theme: shrink
   wrong_pass_message: 密码错误，请重新输入。
+  theme: shrink
+  # tags: secrets.ENCRYPT_TAGS_LIST
   decryptButton:
     text: 解密
+  autoSave: true
+  stableSalt: true
+  kdf:
+    iterations: 600000
   silent: true
 
 # minify-html

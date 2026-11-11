@@ -1,0 +1,21 @@
+<% if (page.encrypt === true) { %>
+  <%
+  import_script(`
+    <script defer>
+      window.addEventListener('hexo-blog-decrypt', () => {
+        document.querySelector('.hbe-decrypted-content').classList.add('markdown-body');
+        Fluid.utils.retry(() => {
+          if (Fluid.boot && Fluid.boot.refresh) {
+            Fluid.boot.refresh();
+            // Fix image caption not showing after decrypting
+            if (Fluid.plugins && Fluid.plugins.imageCaption) {
+              Fluid.plugins.imageCaption();
+            }
+            return true;
+          }
+        }, 100, 10);
+      });
+    </script>
+  `)
+  %>
+<% } %>
